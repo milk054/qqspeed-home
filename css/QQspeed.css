@@ -1,0 +1,329 @@
+/* 预设置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    float: left;
+}
+
+/* top content */
+.top-content{
+    width: auto;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+}
+.top-content ul{
+    width: 980px;
+    height: 40px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+.top-content .tgame-logo{
+    width: 150px;
+    height: 40px;
+    background: url(../images/logo.png) no-repeat center top;
+    position: relative;
+    z-index: 2;
+}
+.top-content .tgame-logo a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    color: #666;
+    font-size: 14px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.top-content .ad{
+    width: 230px;
+    height: 40px;
+    cursor: pointer;
+}
+.top-content .ad img{
+    width: 100%;
+    height: 100%;
+}
+.top-content .ranking-list{
+    width: 300px;
+    height: 40px;
+    float: right;
+    font-size: 0;
+}
+.top-content .ranking-list p{
+    height: 100%;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 40px;
+    color: #333;
+    position: relative;
+}
+.top-content .ranking-list p.grow{
+    width: 88px;
+    padding-left: 29px;
+    margin:  0 20px 0 36px;
+    text-align: right;
+    cursor: pointer;
+}
+.top-content .ranking-list p.grow:hover{
+    color: #ff4e00;
+}
+.top-content .ranking-list p.list{
+    width: 102px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+.top-content .ranking-list p.grow::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    background: url(../images/xbt.png) -30px 0px;
+}
+.top-content .ranking-list p.list::after{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    background: url(../images/xbt.png) 0px 0px;
+    opacity: .1;
+    transform: rotate(90deg);
+}
+.top-content .option{
+    width: 970px;
+    height: 185px;
+    padding: 0 3px 3px 3px;
+    position: absolute;
+    top: 0;
+    left: 187px;
+    z-index: 1;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    display: none;
+    cursor: pointer;
+}
+.top-content .option img{
+    width: 970px;
+    height: 185px;
+}
+/* 中部动态周年庆 */
+.celebrate{
+    width: 100%;
+    height: 730px;
+    background-color: #0f0;
+    overflow: hidden;
+    background: url(../images/jnh.jpg) no-repeat;
+    background-position: 50% 1px;
+    position: relative;
+    font-size: 0;
+}
+.celebrate .logo{
+    width: 200px;
+    height: 81px;
+    background: url(../images/logo1.png) no-repeat;
+    background-position: center center;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 81px;
+    position: absolute;
+    top: 19px;
+    left: 49px;
+}
+.celebrate .nav{
+    width: 100%;
+    height: 77px;
+    background: rgba(0,0,0,.6);
+    margin-top: 1px;
+}
+.celebrate .nav ul{
+    margin-left: 265px;
+}
+.celebrate .nav li{
+    width: 146px;
+    height: 77px;
+}
+.celebrate .nav li:hover .p1{
+    color: #fc7a2c;
+}
+.celebrate .nav li .p1{
+    font-size: 15px;
+    color: #efefef;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 24px;
+    text-indent: -1px;
+}
+.celebrate .nav li .p2{
+    font-size: 12px;
+    color: #71778c;
+    text-align: center;
+    text-transform: uppercase;
+    transform: scale(0.8);
+    margin-top: 3px;
+}
+.celebrate .nav-show{
+    width: 100%;
+    height: 0px;
+    transition: height .3s;
+    background: rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.celebrate .nav-show > ul{
+    margin-left: 410px;
+}
+.celebrate .nav-show ul .box{
+    width: 146px;
+    height: 192px;
+    padding-top: 15px;
+    float: left;
+    position: relative;
+}
+.celebrate .nav-show ul .box::after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 270px;
+    background: url(../images/gradient.png) no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 145px;
+}
+.celebrate .nav-show ul .no-after::after{
+    content: none;
+}
+.celebrate .nav-show ul .box li{
+    width: 146px;
+    height: 32px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+}
+.celebrate .nav-show ul .box li a:hover{
+    color: #fc7a2c;
+}
+.celebrate .nav-show ul .box li a{
+    font-size: 14px;
+    color: #fff;
+}
+.celebrate .nav-show .box i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/xbt1.png) -249px -167px no-repeat;
+    vertical-align: middle;
+}
+.celebrate a img{
+    width: 282px;
+    height: 93px;
+    position: absolute;
+    bottom: 166px;
+    left: 50%;
+    margin-left: -141px;
+    transition: transform .2s ease-in-out;
+}
+.celebrate a img:hover{
+    transform: scale(1.05);
+}
+/* 右侧小橘子挂件 */
+.celebrate .pendant{
+    width: 230px;
+    height: 377px;
+    position: fixed;
+    top: 150px;
+    right: 20px;
+}
+.celebrate .pendant .juzi{
+    width: 230px;
+    height: 200px;
+    background: url(../images/pendant.png) no-repeat;
+}
+.celebrate .pendant .introduce{
+    width: 119px;
+    height: 82px;
+    background: #00f;
+    position: absolute;
+    top: 37px;
+    left: 55px;
+    background: url(../images/pendant.png) 0px -505px no-repeat;
+}
+.celebrate .pendant .qr{
+    width: 116px;
+    height: 114px;
+    position: absolute;
+    top: 184px;
+    right: 6px;
+    border-radius: 2px;
+    background: url(../images/pendant.png) 0 -250px no-repeat;
+}
+.celebrate .pendant .qr img{
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -53px;
+    margin-left: -54px;
+}
+.celebrate .pendant .red-line{
+    display: inline-block;
+    width: 116px;
+    height: 114px;
+    position: absolute;
+    top: 184px;
+    right: 6px;
+    animation: run 3s infinite;
+}
+@keyframes run{
+    0%{
+        top: 184px;
+    }
+    50%{
+        top: 296px;
+    }
+    100%{
+        top: 184px;
+    }
+}
+.celebrate .pendant .red-line::before{
+    content: '';
+    display: block;
+    width: 116px;
+    height: 2px;
+    background: tomato;
+    box-shadow: 0 0 4px red;
+}
+.celebrate .pendant .zhushou{
+    width: 116px;
+    height: 38px;
+    background: url(../images/pendant.png) -125px -420px no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 300px;
+}
+.celebrate .pendant .zhushou:hover{
+    background: url(../images/pendant.png) 0px -420px no-repeat;
+}
+.celebrate .pendant .baoliao{
+    width: 116px;
+    height: 38px;
+    background: url(../images/pendant.png) -125px -460px no-repeat;
+    position: absolute;
+    right: 6px;
+    top: 340px;
+}
+.celebrate .pendant .baoliao:hover{
+    background: url(../images/pendant.png) 0px -460px no-repeat;
+}
